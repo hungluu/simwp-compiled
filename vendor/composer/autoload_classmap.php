@@ -6,9 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ComposerAutoloaderInitc9accac7b514e63ee708d24f33dd99c9' => $vendorDir . '/composer/autoload_real.php',
+    'ComposerAutoloaderInit86f9c7be0eb57efdd4ad63fe6e65dcfe' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
-    'Composer\\Autoload\\ComposerStaticInitc9accac7b514e63ee708d24f33dd99c9' => $vendorDir . '/composer/autoload_static.php',
+    'Composer\\Autoload\\ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe' => $vendorDir . '/composer/autoload_static.php',
     'Simwp' => $baseDir . '/Simwp.php',
     'Simwp\\Admin' => $baseDir . '/src/Admin.php',
     'Simwp\\Component\\Base' => $baseDir . '/src/Component/Base.php',
@@ -33,9 +33,9 @@ return array(
     'Simwp\\Form\\Tags' => $baseDir . '/src/Form/Tags.php',
     'Simwp\\Form\\Textarea' => $baseDir . '/src/Form/Textarea.php',
     'Simwp\\Form\\Toggle' => $baseDir . '/src/Form/Toggle.php',
-    'Simwp\\Partial\\AutoProcessedOptionManager' => $baseDir . '/src/Partial/AutoProcessedOptionManager.php',
     'Simwp\\Partial\\AutoRenderer' => $baseDir . '/src/Partial/AutoRenderer.php',
     'Simwp\\Partial\\GenericHelpers' => $baseDir . '/src/Partial/GenericHelpers.php',
+    'Simwp\\Partial\\OptionAutoHandler' => $baseDir . '/src/Partial/OptionAutoHandler.php',
     'Simwp\\Partial\\OptionManager' => $baseDir . '/src/Partial/OptionManager.php',
     'Simwp\\Partial\\UserManager' => $baseDir . '/src/Partial/UserManager.php',
     'Simwp\\Partial\\Views' => $baseDir . '/src/Partial/Views.php',

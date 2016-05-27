@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc9accac7b514e63ee708d24f33dd99c9
+class ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -49,9 +49,9 @@ class ComposerStaticInitc9accac7b514e63ee708d24f33dd99c9
     );
 
     public static $classMap = array (
-        'ComposerAutoloaderInitc9accac7b514e63ee708d24f33dd99c9' => __DIR__ . '/..' . '/composer/autoload_real.php',
+        'ComposerAutoloaderInit86f9c7be0eb57efdd4ad63fe6e65dcfe' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
-        'Composer\\Autoload\\ComposerStaticInitc9accac7b514e63ee708d24f33dd99c9' => __DIR__ . '/..' . '/composer/autoload_static.php',
+        'Composer\\Autoload\\ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Simwp' => __DIR__ . '/../..' . '/Simwp.php',
         'Simwp\\Admin' => __DIR__ . '/../..' . '/src/Admin.php',
         'Simwp\\Component\\Base' => __DIR__ . '/../..' . '/src/Component/Base.php',
@@ -76,9 +76,9 @@ class ComposerStaticInitc9accac7b514e63ee708d24f33dd99c9
         'Simwp\\Form\\Tags' => __DIR__ . '/../..' . '/src/Form/Tags.php',
         'Simwp\\Form\\Textarea' => __DIR__ . '/../..' . '/src/Form/Textarea.php',
         'Simwp\\Form\\Toggle' => __DIR__ . '/../..' . '/src/Form/Toggle.php',
-        'Simwp\\Partial\\AutoProcessedOptionManager' => __DIR__ . '/../..' . '/src/Partial/AutoProcessedOptionManager.php',
         'Simwp\\Partial\\AutoRenderer' => __DIR__ . '/../..' . '/src/Partial/AutoRenderer.php',
         'Simwp\\Partial\\GenericHelpers' => __DIR__ . '/../..' . '/src/Partial/GenericHelpers.php',
+        'Simwp\\Partial\\OptionAutoHandler' => __DIR__ . '/../..' . '/src/Partial/OptionAutoHandler.php',
         'Simwp\\Partial\\OptionManager' => __DIR__ . '/../..' . '/src/Partial/OptionManager.php',
         'Simwp\\Partial\\UserManager' => __DIR__ . '/../..' . '/src/Partial/UserManager.php',
         'Simwp\\Partial\\Views' => __DIR__ . '/../..' . '/src/Partial/Views.php',
@@ -303,10 +303,10 @@ class ComposerStaticInitc9accac7b514e63ee708d24f33dd99c9
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc9accac7b514e63ee708d24f33dd99c9::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc9accac7b514e63ee708d24f33dd99c9::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInitc9accac7b514e63ee708d24f33dd99c9::$fallbackDirsPsr4;
-            $loader->classMap = ComposerStaticInitc9accac7b514e63ee708d24f33dd99c9::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe::$fallbackDirsPsr4;
+            $loader->classMap = ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe::$classMap;
 
         }, null, ClassLoader::class);
     }
