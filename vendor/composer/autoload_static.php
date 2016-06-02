@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe
+class ComposerStaticInitf57086188f177cc31a4d35b3bc2a3396
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -49,9 +49,9 @@ class ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe
     );
 
     public static $classMap = array (
-        'ComposerAutoloaderInit86f9c7be0eb57efdd4ad63fe6e65dcfe' => __DIR__ . '/..' . '/composer/autoload_real.php',
+        'ComposerAutoloaderInitf57086188f177cc31a4d35b3bc2a3396' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
-        'Composer\\Autoload\\ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe' => __DIR__ . '/..' . '/composer/autoload_static.php',
+        'Composer\\Autoload\\ComposerStaticInitf57086188f177cc31a4d35b3bc2a3396' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Simwp' => __DIR__ . '/../..' . '/Simwp.php',
         'Simwp\\Admin' => __DIR__ . '/../..' . '/src/Admin.php',
         'Simwp\\Component\\Base' => __DIR__ . '/../..' . '/src/Component/Base.php',
@@ -262,6 +262,7 @@ class ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe
         'Symfony\\Component\\Validator\\GroupSequenceProviderInterface' => __DIR__ . '/..' . '/symfony/validator/GroupSequenceProviderInterface.php',
         'Symfony\\Component\\Validator\\Mapping\\Cache\\CacheInterface' => __DIR__ . '/..' . '/symfony/validator/Mapping/Cache/CacheInterface.php',
         'Symfony\\Component\\Validator\\Mapping\\Cache\\DoctrineCache' => __DIR__ . '/..' . '/symfony/validator/Mapping/Cache/DoctrineCache.php',
+        'Symfony\\Component\\Validator\\Mapping\\Cache\\Psr6Cache' => __DIR__ . '/..' . '/symfony/validator/Mapping/Cache/Psr6Cache.php',
         'Symfony\\Component\\Validator\\Mapping\\CascadingStrategy' => __DIR__ . '/..' . '/symfony/validator/Mapping/CascadingStrategy.php',
         'Symfony\\Component\\Validator\\Mapping\\ClassMetadata' => __DIR__ . '/..' . '/symfony/validator/Mapping/ClassMetadata.php',
         'Symfony\\Component\\Validator\\Mapping\\ClassMetadataInterface' => __DIR__ . '/..' . '/symfony/validator/Mapping/ClassMetadataInterface.php',
@@ -303,10 +304,10 @@ class ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe::$fallbackDirsPsr4;
-            $loader->classMap = ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf57086188f177cc31a4d35b3bc2a3396::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf57086188f177cc31a4d35b3bc2a3396::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitf57086188f177cc31a4d35b3bc2a3396::$fallbackDirsPsr4;
+            $loader->classMap = ComposerStaticInitf57086188f177cc31a4d35b3bc2a3396::$classMap;
 
         }, null, ClassLoader::class);
     }

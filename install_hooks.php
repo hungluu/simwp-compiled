@@ -16,8 +16,17 @@ Simwp\Admin::bind('menu', function(){
 
 // Init option and render requested pages
 Simwp\Admin::bind('init', function(){
+	// Register removed notices feature
+	Simwp::option('---simwp-removed-notices', 'array')->set('default', array())->updated(function($key, $data, $option){
+		if(!Simwp::isCsrf()){
+			$removed = Simwp::get('---simwp-removed-notices');
+			$removed[] = $data;
+			Simwp::set('---simwp-removed-notices', $removed);
+		}
+	});
+
 	Simwp::manageOptions();
-	Simwp::renderPage();
+	Simwp::renderSection();
 });
 
 // Init notices
@@ -27,16 +36,7 @@ Simwp\Admin::bind('notices', function(){
 
 // Enqueue required script
 Simwp\Admin::bind('enqueue_scripts', function(){
-	wp_enqueue_script('simwp/script' , Simwp::url( __DIR__ . '/extras/js/simwp.js'), ['jquery'], false, true);
-});
-
-// Register removed notices feature
-Simwp::option('---simwp-removed-notices', 'array')->set('default', [])->updated(function($key, $data, $option){
-	if(!Simwp::isCsrf()){
-		$removed = Simwp::get('---simwp-removed-notices');
-		$removed[] = $data;
-		Simwp::set('---simwp-removed-notices', $removed);
-	}
+	wp_enqueue_script('simwp/script' , Simwp::url( __DIR__ . '/extras/js/simwp.js'), array('jquery'), false, true);
 });
 
 define('SIMWP_HOOKS_LOADED', true);

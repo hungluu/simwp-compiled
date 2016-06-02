@@ -6,9 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ComposerAutoloaderInit86f9c7be0eb57efdd4ad63fe6e65dcfe' => $vendorDir . '/composer/autoload_real.php',
+    'ComposerAutoloaderInitf57086188f177cc31a4d35b3bc2a3396' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
-    'Composer\\Autoload\\ComposerStaticInit86f9c7be0eb57efdd4ad63fe6e65dcfe' => $vendorDir . '/composer/autoload_static.php',
+    'Composer\\Autoload\\ComposerStaticInitf57086188f177cc31a4d35b3bc2a3396' => $vendorDir . '/composer/autoload_static.php',
     'Simwp' => $baseDir . '/Simwp.php',
     'Simwp\\Admin' => $baseDir . '/src/Admin.php',
     'Simwp\\Component\\Base' => $baseDir . '/src/Component/Base.php',
@@ -219,6 +219,7 @@ return array(
     'Symfony\\Component\\Validator\\GroupSequenceProviderInterface' => $vendorDir . '/symfony/validator/GroupSequenceProviderInterface.php',
     'Symfony\\Component\\Validator\\Mapping\\Cache\\CacheInterface' => $vendorDir . '/symfony/validator/Mapping/Cache/CacheInterface.php',
     'Symfony\\Component\\Validator\\Mapping\\Cache\\DoctrineCache' => $vendorDir . '/symfony/validator/Mapping/Cache/DoctrineCache.php',
+    'Symfony\\Component\\Validator\\Mapping\\Cache\\Psr6Cache' => $vendorDir . '/symfony/validator/Mapping/Cache/Psr6Cache.php',
     'Symfony\\Component\\Validator\\Mapping\\CascadingStrategy' => $vendorDir . '/symfony/validator/Mapping/CascadingStrategy.php',
     'Symfony\\Component\\Validator\\Mapping\\ClassMetadata' => $vendorDir . '/symfony/validator/Mapping/ClassMetadata.php',
     'Symfony\\Component\\Validator\\Mapping\\ClassMetadataInterface' => $vendorDir . '/symfony/validator/Mapping/ClassMetadataInterface.php',

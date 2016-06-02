@@ -1,3 +1,15 @@
+**0.0.5-alpha**
+- Refine Form Loop-type components
+- Move handling code for removable notices into admin_init hook
+- Fix wrong naming in section and page hooks
+- Add a new section rendering mode that uses both navbar and custom content
+
+**0.0.4-alpha**
+- Use array() instead of [] to support PHP 5.3
+- Add a basic javascript api for extending components
+- Simwp\\Form\\Loop now does not require $options, will get the option_value if $options not provided
+- ...
+
 **0.0.3-alpha**
 - Add a changelog
 - Add TODO
