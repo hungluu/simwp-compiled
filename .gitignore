@@ -7,5 +7,6 @@ composer.lock
 # scss files
 /extras/*.scss
 /extras/scss/
+/extras/css/
 
 TODO
