@@ -1,0 +1,9 @@
+# composer.gitignore
+composer.phar
+composer.lock
+# /vendor/
+.git
+
+# scss files
+/extras/*.scss
+/extras/scss/
